@@ -1,0 +1,9 @@
+{
+    "sections": {
+        "home": {
+            "type": "home",
+            "settings": {}
+        }
+    },
+    "order": ["home"]
+}
