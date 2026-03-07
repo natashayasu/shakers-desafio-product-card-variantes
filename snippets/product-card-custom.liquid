@@ -1,0 +1,40 @@
+{{ 'product-card.css' | asset_url | stylesheet_tag }}
+
+<section class="product-grid">
+{% for product in collection.products %}
+<article class="product-card">
+      <figure>
+            <img src="{{ product.featured_image | image_url }}" alt="{{ product.title }}" width="300"  class="product-image">
+      </figure>
+      <header>
+            <h3 class="product-title">{{ product.title }}</h3>
+      </header>
+      <p class="product-price">{{ product.price | money }}</p>
+      <form class="product-form">
+            {% for option in product.options_with_values %}
+                  <label for="{{ option.name | handle }}">
+                        {{ option.name }}
+                  </label>
+                  <select id="{{ option.name | handle }}">
+                        <option disabled selected>
+                              Selecione {{ option.name }}
+                        </option>
+                        {% for value in option.values %}
+                              <option value="{{ value }}">
+                                    {{ value }}
+                              </option>
+                        {% endfor %}
+                  </select>
+            {% endfor %}
+            <button type="button" class="add-to-cart">
+                  Adicionar ao carrinho
+            </button>
+      </form>
+      <script>
+            const variants = {{ product.variants | json }};
+      </script>
+</article>
+{% endfor %}
+</section>
+
+<script src="{{ 'product-card.js' | asset_url }}" defer></script>
