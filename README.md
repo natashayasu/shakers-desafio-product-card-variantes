@@ -28,6 +28,7 @@ Foi criado um produto no Admin da Shopify contendo **duas opções de variantes*
 
 **Cor**
 - Preto
+- Chumbo
 - Branco
 
 **Tamanho**
@@ -187,7 +188,7 @@ shakers-desafio-product-card-variantes
 1. Clonar o repositório
 
 ```
-git clone https://github.com/seu-usuario/shakers-desafio-product-card-variantes
+git clone https://github.com/natashayasu/shakers-desafio-product-card-variantes
 ```
 
 2. Acessar a pasta do projeto
@@ -225,7 +226,7 @@ Posteriormente foi aberto um **Pull Request para a branch main**.
 
 Link do PR:
 
-COLOCAR LINK DO PR AQUI
+[LINK DO PR](https://github.com/natashayasu/shakers-desafio-product-card-variantes/pull/1)
 
 ---
 
@@ -241,7 +242,7 @@ Foi gravado um vídeo de **3 a 6 minutos** demonstrando:
 
 Link do vídeo:
 
-[COLOCAR LINK DO VÍDEO AQUI](https://drive.google.com/file/d/1tAyjLOLE-r3zi4dThWcZ4VZcH_pyaW3s/view?usp=sharing)
+[LINK DO VÍDEO](https://drive.google.com/file/d/1tAyjLOLE-r3zi4dThWcZ4VZcH_pyaW3s/view?usp=sharing)
 
 ---
 
